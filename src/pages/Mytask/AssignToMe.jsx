@@ -262,7 +262,6 @@ function AssignToMe() {
             )}
           </div>
 
-          {/* TARGET ICON */}
           <button
             type="button"
             className={styles.btnIcon}
@@ -271,13 +270,6 @@ function AssignToMe() {
             <Target size={18} />
           </button>
         </div>
-      </div>
-
-      {/* Submit */}
-      <div className={styles.submitContainer}>
-        <button type="submit" className={styles.submitBtn}>
-          Submit
-        </button>
       </div>
     </form>
   );
