@@ -1,0 +1,40 @@
+// PageNotFound.module.scss
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: bold;
+  color: #3148b0; // Primary color
+  margin: 0;
+}
+
+.message {
+  font-size: 24px;
+  color: #555;
+  margin: 12px 0 24px;
+}
+
+.homeButton {
+  background-color: #3148b0;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #25399a; 
+  }
+}

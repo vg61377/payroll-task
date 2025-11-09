@@ -1,0 +1,23 @@
+.loginWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headding {
+        font-weight: 500;
+        margin: 0.5rem 0rem 2rem 0rem;
+    }
+
+    .form {
+        width: 60%;
+
+        .btnConteiner {
+            margin-top: 10px;
+            .loginBtn {
+                font-weight: 500 !important;
+                height: 2.5rem !important;
+            }
+        }
+    }
+}

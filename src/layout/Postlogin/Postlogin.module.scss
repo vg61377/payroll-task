@@ -1,0 +1,14 @@
+.postlogin{
+    display: flex;
+    background-color: #f7f7f9;
+    gap: 12px;
+
+    .rightSide{
+        flex: 1;
+        background-color: white;
+
+        .outlet{
+            padding: 8px 16px;
+        }
+    }
+}
