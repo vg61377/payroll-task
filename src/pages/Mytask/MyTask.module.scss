@@ -1,25 +1,26 @@
 .filterDiv {
-    border-bottom: 1px solid rgba(214, 214, 214, 0.4);
-    padding: 8px;
+  border-bottom: 1px solid rgba(214, 214, 214, 0.4);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .leftsideDiv {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 4px;
+  }
 
-    .leftsideDiv {
-        display: flex;
-        gap: 4px;
+  .rightsideDiv {
+    align-self: flex-start;
+    display: flex;
+    gap: 10px;
+
+    .addTask {
+      width: 100px !important;
+      height: fit-content !important;
+      padding: 4px;
+      align-self: center;
     }
-
-    .rightsideDiv {
-      align-self: flex-start;
-        display: flex;
-        gap: 10px;
-
-        .addTask {
-            width: 100px !important;
-            height: fit-content !important;
-            padding: 4px;
-            align-self: center;
-        }
-    }
+  }
 }

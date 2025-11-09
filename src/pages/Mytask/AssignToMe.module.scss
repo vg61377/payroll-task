@@ -1,0 +1,151 @@
+.assignForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.fieldLabel {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btnWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btnIcon {
+  background: #e5e5e5;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    stroke-width: 1.8;
+  }
+
+  &:hover {
+    background: #d6d6d6;
+  }
+
+  &.active {
+    background: #dbeafe;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+  }
+}
+
+.dateLabel {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.topRightX {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #f87171;
+  border: none;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #ef4444;
+  }
+}
+
+.calendarWrapper {
+  position: relative;
+}
+
+.calendarPopup {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  padding: 0.5rem;
+  animation: fadeIn 0.15s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fileWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fileLabel {
+  cursor: pointer;
+}
+
+.fileName {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: #333;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.submitContainer {
+  text-align: right;
+}
+
+.submitBtn {
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #1d4ed8;
+  }
+}

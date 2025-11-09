@@ -1,7 +1,7 @@
 import React from "react";
 import { Autocomplete, TextField } from "@mui/material";
 import styles from "./AutocompleteSelect.module.scss";
-import { combineClass } from "../../../../../practice/practice_app/src/utils/constaint";
+import { combineClasses } from "../../utils/utils";
 
 const AutocompleteSelect = ({
   label = "Select option",
@@ -17,7 +17,7 @@ const AutocompleteSelect = ({
 }) => {
   return (
     <Autocomplete
-      className={combineClass(styles.autocomplete, className)}
+      className={combineClasses(styles.autocomplete, className)}
       options={options}
       value={value}
       onChange={(event, newValue) => onChange(newValue)}

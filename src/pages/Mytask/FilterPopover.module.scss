@@ -1,0 +1,109 @@
+.popover {
+  width: 580px;
+  padding: 16px 20px 20px;
+  border-radius: 14px !important;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .closeIcon {
+    cursor: pointer;
+    color: #555;
+    transition: 0.2s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2c2c2c;
+}
+
+/* Section Wrapper */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dropdown / Input appearance */
+.field {
+  margin-top: 2px;
+
+  .MuiOutlinedInput-root {
+    border-radius: 10px !important;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  min-width: 0;
+
+  * {
+    min-width: 0 !important;
+  }
+
+  .MuiFormControl-root {
+    width: 100% !important;
+  }
+
+  .MuiInputBase-root {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .MuiOutlinedInput-root {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-radius: 10px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .MuiAutocomplete-root {
+    width: 100% !important;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 4px;
+
+  button {
+    min-width: 90px;
+    font-size: 14px;
+    border-radius: 8px !important;
+    height: 40px;
+  }
+}

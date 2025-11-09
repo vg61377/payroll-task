@@ -1,0 +1,32 @@
+.tabsWrapper {
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb; // light grey
+}
+
+.tabs {
+  min-height: 48px;
+
+  .MuiTabs-flexContainer {
+    gap: 100px; // spacing like screenshot
+  }
+}
+
+.tabItem {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+  color: #6b7280 !important; // grey
+  padding: 10px 0;
+  min-width: auto !important;
+}
+
+.tabItem.Mui-selected {
+  color: #000 !important; // active black
+  font-weight: 700 !important;
+}
+
+.tabIndicator {
+  background-color: #4c6cf5 !important; // blue line
+  height: 3px !important;
+  border-radius: 2px;
+}

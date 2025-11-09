@@ -23,7 +23,7 @@ function AddTaskModal({ open = true, onClose }) {
       size="md"
       open={open}
       onClose={onClose}
-      title="Add Task"
+      title="New Task"
       footerContent={
         <>
           <MuiButton onClick={onClose} variant="outlined" size="small">
@@ -35,27 +35,8 @@ function AddTaskModal({ open = true, onClose }) {
         </>
       }
     >
-      <Box sx={{ width: "100%", borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          size="small"
-          value={value}
-          onChange={handleChange}
-          aria-label="Task Tabs"
-          variant="standard"
-        >
-          <Tab
-            label="Assign To Me"
-            sx={{ minWidth: 100, padding: "4px 8px", fontSize: "0.8rem" }}
-          />
-          <Tab
-            label="Assign To Other"
-            sx={{ minWidth: 100, padding: "4px 8px", fontSize: "0.8rem" }}
-          />
-        </Tabs>
-      </Box>
       <Box sx={{ py: 2, px: 1 }}>
-        {value === 0 && <AssignToMe />}
-        {value === 1 && <AssingToOthers />}
+        <AssignToMe />
       </Box>
     </MuiModal>
   );
