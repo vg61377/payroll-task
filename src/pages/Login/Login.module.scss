@@ -1,23 +1,57 @@
-.loginWrapper {
-    width: 100%;
+.LoginPage {
+  // width: 29rem;
+  border-radius: 8px;
+  padding: 1.2rem;
+
+  .headText {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 
-    .headding {
-        font-weight: 500;
-        margin: 0.5rem 0rem 2rem 0rem;
+    img {
+      width: 3.75rem;
+      height: 3.75rem;
+    }
+  }
+
+  .inputSection {
+    padding: 16px;
+    border-radius: 8px;
+    min-width: 300px;
+
+    .actionRow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+      flex-wrap: nowrap; /* keeps them in one line */
+    }
+    .forgot {
+      font-size: 13px;
+      color: #74788d;
+      cursor: pointer;
+      white-space: nowrap; /* prevents breaking */
+      margin-left: 0.5rem;
     }
 
-    .form {
-        width: 60%;
-
-        .btnConteiner {
-            margin-top: 10px;
-            .loginBtn {
-                font-weight: 500 !important;
-                height: 2.5rem !important;
-            }
-        }
+    .button {
+      padding: 5px 10px !important;
+      font-size: 14px !important;
+      text-transform: none !important;
     }
+
+    .secondaryButton {
+      padding: 5px 10px !important;
+      font-size: 14px !important;
+      text-transform: none !important;
+    }
+
+    .orText {
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+    }
+  }
 }
